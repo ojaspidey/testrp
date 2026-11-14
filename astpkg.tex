@@ -1,0 +1,43 @@
+\usepackage{tikz}
+\usetikzlibrary{positioning, shapes.geometric}
+\usetikzlibrary{external}
+\usetikzlibrary{calc}
+\tikzexternalize[prefix=figures/]
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage[a4paper, margin=2.5cm, bottom=2cm,top=2cm]{geometry}
+\usepackage{enumitem} \setlist[enumerate]{leftmargin=15pt} \setlist[itemize]{leftmargin=15pt}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{framed}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{tocloft}
+\usepackage{fmtcount}
+\usepackage[hidelinks,english]{hyperref} \hypersetup{colorlinks=true, linkcolor=blue, urlcolor=red}
+\usepackage{titling}
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]
+  {\normalfont\huge\bfseries}
+  {\chaptername~\thechapter :}
+  {10pt}
+  {\Huge}
+\titlespacing*{\chapter}{0pt}{-10pt}{20pt}
+\usepackage{fontspec} 
+\usepackage{polyglossia} 
+
+\setdefaultlanguage{hindi}
+\setotherlanguage[variant=british]{english}
+
+\defaultfontfeatures+{Path = fonts/, BoldFont=*-Bold, UprightFont=*-Regular, Extension = .ttf}
+\setmainfont{NotoSansDevanagari}[
+    Script = Devanagari
+]
+\setsansfont{NotoSerif}[
+    Script = Latin,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-BoldItalic
+]
+\setmonofont{NotoSansMono}[
+    Script = Latin
+]
