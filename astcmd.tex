@@ -1,0 +1,55 @@
+\title{{\Huge\textbf{गुण}}}
+%Separate title with new line for subtitle
+\author{Ojas Ameet Sevekar \\ ओजस अमित सेवेकर}
+\date{०३/१०/२०२६}
+
+\setlength{\parskip}{0.75em plus 0.1em}
+\setlength{\parindent}{0pt}
+
+\setlength{\cftbeforesecskip}{0.5em plus 0.2em}
+\setlength{\cftbeforesubsecskip}{0.25em plus 0.1em}
+\setlength{\cftbeforechapskip}{1em plus 0.5em}
+\renewcommand{\cftchapfont}{\large\bfseries}
+%\renewcommand{\cftchappagefont}{\Large\bfseries}
+\renewcommand{\cftpartfont}{\Large\bfseries}
+%\renewcommand{\cftsecpagefont}{\large}
+%\renewcommand{\cftsubsecfont}{\large}
+%\renewcommand{\cftsubsecpagefont}{\large}
+\renewcommand{\thechapter}{\localnumeral*{chapter}}
+\renewcommand{\thesection}{\thechapter.\localnumeral*{section}}
+\renewcommand{\thesubsection}{\thesection.\localnumeral*{subsection}}
+\renewcommand{\thefigure}{\thechapter.\localnumeral*{figure}}
+\renewcommand{\theequation}{\thechapter.\localnumeral*{equation}}
+
+\renewcommand*{\equationautorefname}{समीकरण}
+\renewcommand*{\footnoteautorefname}{पादटिप्पणी}
+\renewcommand*{\itemautorefname}{बिंदु}
+\renewcommand*{\figureautorefname}{चित्र}
+\renewcommand*{\tableautorefname}{सारणी}
+\renewcommand*{\partautorefname}{खण्ड}
+\renewcommand*{\appendixautorefname}{परिशिष्ट}
+\renewcommand*{\chapterautorefname}{अध्याय}
+\renewcommand*{\sectionautorefname}{अनुभाग}
+\renewcommand*{\subsectionautorefname}{उप-अनुभाग}
+\renewcommand*{\subsubsectionautorefname}{उप-उप-अनुभाग}
+\renewcommand*{\paragraphautorefname}{अनुच्छेद}
+\renewcommand*{\subparagraphautorefname}{उप-अनुच्छेद}
+\renewcommand*{\FancyVerbLineautorefname}{पंक्ति}
+\renewcommand*{\theoremautorefname}{प्रमेय}
+\renewcommand*{\pageautorefname}{पृष्ठ}
+
+\definecolor{sampler}{rgb}{0.63, 0.79, 0.95}
+\definecolor{ruler}{rgb}{0.9, 0.6, 0.6}
+\definecolor{mathset}{rgb}{0.6, 0.9, 0.6}
+\newcommand*{\satva}[1]{\textcolor{orange}{#1}}
+\newcommand*{\rajas}[1]{\textcolor{magenta}{#1}}
+\newcommand*{\tamas}[1]{\textcolor{purple}{#1}}
+\newcommand*{\composite}[1]{\textcolor{red}{#1}}
+
+\newcommand*{\bt}[1]{\textbf{#1}}
+\newcommand*{\ut}[1]{\underline{#1}}
+\newcommand*{\itt}[1]{\textit{#1}}
+\newcommand*{\vm}[1]{\boldsymbol{#1}}
+\newenvironment{example}{\def\FrameCommand{\colorbox{sampler}} \MakeFramed{\advance\hsize+\width}\begin{center}}{\end{center}\endMakeFramed}
+\newenvironment{syntax}{\def\FrameCommand{\colorbox{ruler}} \MakeFramed{\advance\hsize+\width}\begin{center}}{\end{center}\endMakeFramed}
+\newenvironment{setdef}{\def\FrameCommand{\colorbox{mathset}} \MakeFramed{\advance\hsize+\width}\begin{center}}{\end{center}\endMakeFramed}
